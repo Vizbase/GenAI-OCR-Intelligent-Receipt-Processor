@@ -3,7 +3,7 @@ import base64
 import json
 
 # Your OpenRouter API Key
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "Your-API"
 
 def describe_image_with_model(image_path, model_name, instruction):
     """

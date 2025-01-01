@@ -3,7 +3,7 @@ import base64
 import json
 
 # Your OpenRouter API Key
-OPENROUTER_API_KEY = "Your-API"
+OPENROUTER_API_KEY = "Your_API"
 
 def describe_image_with_model(image_path, model_name, instruction):
     """
@@ -155,13 +155,13 @@ Return only the LaTeX code for the table. Do not include any preamble, explanati
 """
 
 # Path to the receipt image
-image_path = 'data/receipt4.jpeg'
+image_path = 'data/receipt1.jpeg'
 
 # List of models to be tested
 models = [
     {"name": "mistralai/pixtral-12b", "description": "PixTral 12B"},
-    {"name": "qwen/qwen-2-vl-7b-instruct", "description": "Qwen-2V"},
-    {"name": "meta-llama/llama-3.2-11b-vision-instruct:free", "description": "LLaMA-3.2"}
+    {"name": "qwen/qwen-2-vl-72b-instruct", "description": "Qwen-2V"},
+    {"name": "meta-llama/llama-3.2-90b-vision-instruct", "description": "LLaMA-3.2"}
 ]
 
 # Collect LaTeX output from each model
